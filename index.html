@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Carlos Mariano Salcedo </strong> — <em>mariano1@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Exclusionary Zoning
+				
+			</h2>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<li>Are there any alarming holes or issues on the dataset? [Fig 1, Fig 2,Fig 5] SOURCE: Lectures from Week 2 regarding exploratory data visualization.</li>
+				<li>Is there a pattern between youth population and single family zoned areas? [Figure 3] SOURCE: Talking to family members who agree with single 
+					family zoning who said youth saftey was a concern</li>
+				<li>Is there a pattern with percentage of wealthy population and areas with single family zoned areas? [Figure 4] SOURCE: This questions was inspired 
+					by the Tiny Living article that seemed to stress not altering the "look" of suburbs which to me sounded like a subtle way saying, making places "not look poor"./li>
+				<li>Where are white people distributed in Boston, and what type of housing do they usually live in. [ Figure 6] SOURCE: During Week 1 Lectures, the videos played 
+					seemed to hint at the fact that part of the origin of the housing crisis was segregation. </li>
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img src="images/male_female.png" alt="" width="600" height="500" />
+				<figcaption>
+				Missing Population Count in Burlingotn, Chelsea, Everett, and Somerville. According to the Census Burea Website, 
+				Sumerville had a population of 75,754 people in 2010. Thus, some data seems to be missing. Additionally the count 
+				for population seems to be unreasonably low. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/fixed_pop_count.png" alt="" width="600" height="500"/>
+				<figcaption>
+				UPDATE on Figure 1: The data set was fixed by staff, and this is reflected on the fact every Municpal name has some count. 
+				Additionally, the population count is in an order of magnitude that is reasonable. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/pop_comp_u18.png" alt="" width="800" height="500" />
+				<figcaption>
+				This map comparison allows us to see that a lot of areas that only allow for single family housing align with places with 
+				a high ratio of under 18 population. Note: The %U18 is a Calculated Field.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/O200_map.png" alt="" width="800" height="500" />
+				<figcaption>
+				This map shows the ratio of house holds that earn more than $200,000 [%O200] and comparing them with the single 
+				family only map. We can see that there is a strong relationship between the two. Most notable, 
+				Sudbury is a Municpal area where more than 90% of households earn more than $200,000 dollars a year. Note that 
+				Wellesley Municipal has been excluded for reasons explained in Figure 5. Note: The %O200 is a Calculated Field.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/error_1.png" alt="" width="800" height="500" />
+				<figcaption>
+				This figure shows how the ratio of households earning more than $200,000 is greater than 1 in Wellesley, which does not make 
+				sense.More confusiingly, the quantities used to calculate this ratio (over 200k households / total households ) should yield a result 
+				less than 1. Since I was not able to really get to why this is ocurring, I excluded this Municpal area from any household calculations. 
+
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/white.png" alt="" width="800" height="500" />
+				<figcaption>
+				This figure, we can observe that the predominantly white areas are outside of Boston, and very present in areas with single-familiy only zoning. 
+				Note: The %Avg_White is a Calculated Field.
+				</figcaption>
+			</figure>
+
+			
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+			<p> Firstly, it was really useful to examine the population data in its simplest form (as a frequency diagram) 
+				as it allowed me to quickly spot major errors in the data set regarding the census part of the data. 
+				As far as the exploratory process, it was useful to create Calculated Fields for ratios rather than compare raw numbers. 
+				Especially beacuse the dataset's population is heavily skewed towards Boston, so not talking in terms of percents or ratios 
+				would have probably made every visualization seem Boston-centric. As far as trends that can be observed from this 
+				data set and the figures above, it is clear that the areas with single family only zoning are dominated by 
+				wealthy, white, young famlilies (young meaning they have a high ratio of Under 18 population).
+			</p>
+		</section>
+	</main>
+</body>
+</html>
